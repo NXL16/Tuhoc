@@ -1,0 +1,70 @@
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.title {
+    width: 300px;
+    white-space: nowrap;
+    background-color: pink;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+h2 {
+    background-color: aqua;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+
+.box {
+    margin: 50px;
+    height: 280px;
+    width: 280px;
+    background-color: pink;
+    box-shadow: 10px 10px 8px #d3303083;
+    /* box-shadow: inset 30px 30px #d33030; */
+    /* đổ nhiều bóng */
+    /* box-shadow: 290px 0 #82BD01, 0 290px #00A8F0, 290px 290px #FFBB02; */
+}
+
+
+.anh_demo {
+    margin: 0 100px;
+    max-height: 650px;
+    /* không cho phép xem và sao chép hình ảnh */
+    pointer-events: none;
+}
+
+.btn {
+    margin: 140px 200px;
+    display: inline-block;
+    padding: 10px 25px;
+    color: #fff;
+    background-color: aqua;
+    font-size: 25px;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+
+.demo {
+    max-width: 60%;
+    margin: 0 auto;
+    display: block;
+}
+
+
+.box2 {
+    max-width: 700px;
+    background-color: cyan;
+    margin: 0 auto;
+}
+
+
+
+::selection{
+    background-color: rgb(212, 255, 0);
+    color: #000000;
+}
