@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* Khôi phục lại cỡ chữ mặc định theo rem */
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/*  =================common(chung)================== */
+a {
+    text-decoration: none;
+}
+
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 118px;
+    line-height: 50px;
+    padding: 0 16px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 24.5px;
+    background: #171100;
+
+}
+
+/* ===============header=============== */
+.header {
+    background: #FFFCF4;
+}
+
+.header .body {
+    display: flex;
+    align-items: center;
+    padding: 36px 0 8px;
+}
+
+header.fixed {
+    position: sticky;
+    top: -28px;
+}
+
+.nav {
+    margin-left: auto;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav a {
+    position: relative;
+    color: #5F5B53;
+    font-size: 1.6rem;
+    padding: 8px 21px;
+}
+
+.nav li.active a,
+.nav a:hover {
+    color: #171100;
+    text-shadow: 1px 1px 2px currentColor;
+}
+
+.nav li.active a::after {
+    position: absolute;
+    left: 21px;
+    bottom: 6px;
+    display: block;
+    content: "";
+    width: 12px;
+    height: 2px;
+    border-radius: 1px;
+    background: #171100;
+}
+
+.header .btn-sign-up {
+    min-width: 144px;
+}
+
+.header .action {
+    margin-left: 49px;
+}

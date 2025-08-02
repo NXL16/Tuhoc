@@ -8,17 +8,17 @@ h1 {
 }
 
 h2 {
-    /* Tăng biến đếm lên 1 */
+    /* Tăng biến đếm lên 1 khi gặp thẻ h2 */
     counter-increment: section;
     /* Tạo biến đếm và reset biến đếm thẻ h3 về 0 */
     counter-reset: sub-section;
 }
 
 h2::before {
+    /* Gắn biến đếm cho thằng content */
     content: "Phần " counter(section) ": ";
     text-decoration: underline;
 }
-
 
 h3 {
     counter-increment: sub-section;
